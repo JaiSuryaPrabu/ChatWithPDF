@@ -1,14 +1,14 @@
 # This file is the UI for the chatwithpdf
 import gradio as gr
-from core import process_pdf,process_query
+from ChatWithPDF import core
 
 def process_pdf_and_text(pdf_file_path, user_text):
     print(f"[INFO] The pdf file is in the {pdf_file_path}")
     if not hasattr(process_pdf_and_text,"_called"):
-        process_pdf(pdf_file_path)
+        core.process_pdf(pdf_file_path)
         process_pdf_and_text._called = True
     
-    result = process_query(user_text)
+    result = core.process_query(user_text)
     return result
 
 def main():
@@ -30,4 +30,4 @@ def main():
     demo.launch()
     
 if __name__ == "__main__":
-    main
+    main()

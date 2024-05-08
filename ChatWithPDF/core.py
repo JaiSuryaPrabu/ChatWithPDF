@@ -1,5 +1,5 @@
-from embeddings import Embeddings
-from rag import RAG
+from ChatWithPDF.embeddings import Embeddings
+from ChatWithPDF.rag import RAG
 
 rag_ = None
 

@@ -30,10 +30,18 @@ cd ChatWithPDF
 ```bash
 pip install -r requirements.txt
 ```
-4. To run the app locally
+4. To build the app locally
 ```
-chat
+python setup.py build sdist bdist
+pip install -e .
 ```
+5. To run the app locally
+```
+chat 
+```
+Once it started to execute, open the browser and enter this `http://127.0.0.1:7860/`.
+And the app will starts to run on your browser locally.
+
 # Contributions
 I am very glad everyone from beginners to experts to contribute this project to make it better !
 Below are some guidelines to help you get started:
