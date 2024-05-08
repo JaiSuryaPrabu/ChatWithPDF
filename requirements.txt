@@ -1,0 +1,12 @@
+numpy
+pandas
+spacy
+
+tqdm
+PyMuPDF
+
+torch
+sentence_transformers
+transformers
+
+gradio

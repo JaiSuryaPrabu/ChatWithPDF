@@ -2,7 +2,6 @@
 import torch
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from sentence_transformers import SentenceTransformer,util
 from transformers import AutoTokenizer , AutoModelForCausalLM
 
@@ -56,10 +55,6 @@ class RAG:
         context = "- " + "\n- ".join([item["sentence_chunk"] for item in context_items])
     
         base_prompt = """Based on the following context items, please answer the query.
-    Use the following example as reference for the ideal answer style.
-    \nExample :
-    Query: What are the fat-soluble vitamins?
-    Answer: The fat-soluble vitamins include Vitamin A, Vitamin D, Vitamin E, and Vitamin K. These vitamins are absorbed along with fats in the diet and can be stored in the body's fatty tissue and liver for later use. Vitamin A is important for vision, immune function, and skin health. Vitamin D plays a critical role in calcium absorption and bone health. Vitamin E acts as an antioxidant, protecting cells from damage. Vitamin K is essential for blood clotting and bone metabolism.
     \nNow use the following context items to answer the user query:
     {context}
     \nRelevant passages: <extract relevant passages from the context here>
