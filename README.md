@@ -53,7 +53,7 @@ Below are some guidelines to help you get started:
 5. **Commit your changes** : Commit your changes with a clear and consice commit message :
 ```
 git add .
-git commit -m "Add feature : [description]
+git commit -m "Add feature : [description]"
 ```
 6. **Push to your fork** : Push your changes to your forked repository
 ```
