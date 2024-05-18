@@ -1,6 +1,11 @@
 # ChatWithPDF
 > Upload the pdf to the LLM and start to chat with it 
 
+ChatWithPDF is hosted in the huggingface spaces and here is the [link](https://huggingface.co/spaces/hexml/chat-with-pdf)
+
+# Features 
+- [ ] Dictionary - provide (user's query) meaning to the LLM in the `Rag.prompt_formatter()`
+
 # Installation
 ## Dependencies
 ChatWithPDF requires :

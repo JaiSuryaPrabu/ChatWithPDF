@@ -1,7 +1,7 @@
 from setuptools import setup,find_packages
 
 name = "ChatWithPDF"
-version = "0.0.1"
+version = "0.0.2"
 description = "Chat with your PDF"
 author = "Jaisurya"
 email = "pjaisurya@gmail.com"
